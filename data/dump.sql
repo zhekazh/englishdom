@@ -14,4 +14,12 @@ CREATE TABLE IF NOT EXISTS `log` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `observer` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255),
+  `event` INT(11),
+  `order_num` INT(11),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 INSERT INTO observer (name, event, order_num) VALUES ('CommentEditor', 1, 1), ('CommentLogger', 1, 2), ('CommentLogger', 2, 2);
