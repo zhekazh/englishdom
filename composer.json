@@ -1,0 +1,20 @@
+{
+  "name": "zhuk/ed-task.dev",
+  "license": "proprietary",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "": "app/"
+    },
+    "classmap": [
+      "app/App.php"
+    ]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  },
+  "require": {
+    "league/route": "^2.0",
+    "zendframework/zend-diactoros": "^1.3"
+  }
+}
